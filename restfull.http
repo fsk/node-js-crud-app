@@ -1,0 +1,45 @@
+@BASE_URL = http://localhost:3000/api/users
+
+#Tum kayitlari listeler
+GET {{BASE_URL}}
+
+
+###
+//GET {{BASE_URL}}/60eb01d62bbdc509d882e9aa
+
+
+
+#Yeni bir kayit ekler
+###
+POST {{BASE_URL}}
+content-type: application/json
+{
+    "name": "Sahin",
+    "surname": "Erdogan",
+    "username": "sahinerdogan",
+    "email": "sahinerdogan@gail.com",
+    "password": "sahin"
+}
+
+
+
+
+
+###
+DELETE   {{BASE_URL}}/433
+
+
+###
+DELETE {{BASE_URL}}/60eb01d62bbdc509d882e9al
+
+
+
+###
+POST {{BASE_URL}}/giris
+
+Content-Type: application/json
+
+{
+    "email": "nilperi@gmail.com",
+    "password": "nilperi"
+}
